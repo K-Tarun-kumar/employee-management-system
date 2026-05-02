@@ -1,0 +1,15 @@
+<h2>Add Employee</h2>
+
+<form (ngSubmit)="saveEmployee()">
+    <input type="text" [(ngModel)]="employee.name" name="name" placeholder="name" required>
+    
+    <input type="text" [(ngModel)]="employee.email" name="email" placeholder="email" required>
+    
+    <input type="text" [(ngModel)]="employee.salary" name="salary" placeholder="salary" required>
+    
+    <input type="text" [(ngModel)]="employee.department" name="department" placeholder="department" required>
+
+    <button type="submit">Submit</button>
+
+
+</form>
